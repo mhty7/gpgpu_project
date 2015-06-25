@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582DBA681AECB08B00A62704 /* MyCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 582DBA661AECB08B00A62704 /* MyCamera.cpp */; };
+		584362051ADA59A100D5AF54 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584362041ADA59A100D5AF54 /* GLUT.framework */; };
+		584362071ADB9A1300D5AF54 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584362061ADB9A1300D5AF54 /* OpenGL.framework */; };
 		58943BEB1AD63844008B7E14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58943BEA1AD63844008B7E14 /* main.cpp */; };
+		58943BF21AD63ACE008B7E14 /* kernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 58943BF11AD63ACE008B7E14 /* kernel.cl */; };
+		58943BF41AD67BE0008B7E14 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58943BF31AD67BE0008B7E14 /* OpenCL.framework */; };
+		58943BF71AD6BF48008B7E14 /* resourceManager.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 58943BF51AD6BF48008B7E14 /* resourceManager.hpp */; };
+		58E0A1A31AE350F200AB047A /* kernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E0A1A21AE350F200AB047A /* kernel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		582DBA661AECB08B00A62704 /* MyCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyCamera.cpp; sourceTree = "<group>"; };
+		582DBA671AECB08B00A62704 /* MyCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCamera.h; sourceTree = "<group>"; };
+		584362041ADA59A100D5AF54 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		584362061ADB9A1300D5AF54 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		584362081ADCC2AE00D5AF54 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		584362091ADCC2AE00D5AF54 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
 		58943BE71AD63844008B7E14 /* OpenCLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCLTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58943BEA1AD63844008B7E14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		58943BF11AD63ACE008B7E14 /* kernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernel.cl; sourceTree = "<group>"; };
+		58943BF31AD67BE0008B7E14 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		58943BF51AD6BF48008B7E14 /* resourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = resourceManager.hpp; sourceTree = "<group>"; };
+		58E0A1A21AE350F200AB047A /* kernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kernel.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584362071ADB9A1300D5AF54 /* OpenGL.framework in Frameworks */,
+				584362051ADA59A100D5AF54 /* GLUT.framework in Frameworks */,
+				58943BF41AD67BE0008B7E14 /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +61,9 @@
 		58943BDE1AD63844008B7E14 = {
 			isa = PBXGroup;
 			children = (
+				584362061ADB9A1300D5AF54 /* OpenGL.framework */,
+				584362041ADA59A100D5AF54 /* GLUT.framework */,
+				58943BF31AD67BE0008B7E14 /* OpenCL.framework */,
 				58943BE91AD63844008B7E14 /* OpenCLTest */,
 				58943BE81AD63844008B7E14 /* Products */,
 			);
@@ -57,7 +80,14 @@
 		58943BE91AD63844008B7E14 /* OpenCLTest */ = {
 			isa = PBXGroup;
 			children = (
+				584362081ADCC2AE00D5AF54 /* Matrix.hpp */,
+				58E0A1A21AE350F200AB047A /* kernel.cpp */,
+				584362091ADCC2AE00D5AF54 /* Vector.hpp */,
 				58943BEA1AD63844008B7E14 /* main.cpp */,
+				58943BF11AD63ACE008B7E14 /* kernel.cl */,
+				58943BF51AD6BF48008B7E14 /* resourceManager.hpp */,
+				582DBA661AECB08B00A62704 /* MyCamera.cpp */,
+				582DBA671AECB08B00A62704 /* MyCamera.h */,
 			);
 			path = OpenCLTest;
 			sourceTree = "<group>";
@@ -118,7 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E0A1A31AE350F200AB047A /* kernel.cpp in Sources */,
+				582DBA681AECB08B00A62704 /* MyCamera.cpp in Sources */,
+				58943BF71AD6BF48008B7E14 /* resourceManager.hpp in Sources */,
 				58943BEB1AD63844008B7E14 /* main.cpp in Sources */,
+				58943BF21AD63ACE008B7E14 /* kernel.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +266,7 @@
 				58943BF01AD63844008B7E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
